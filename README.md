@@ -1,10 +1,12 @@
-# 동국 중고 마켓 (Donguk Second-Hand Marketplace)
+# 동국 중고 마켓 
 
-![mascot](ui_views/other%20images/%EB%8D%B0%EB%B2%A0%EC%84%A4%20%EC%95%84%EC%BD%94.jpg)
+<p align="center">
+  <img src="ui_views/other%20images/%EB%8D%B0%EB%B2%A0%EC%84%A4%20%EC%95%84%EC%BD%94.jpg" alt="mascot">
+</p>
 
 A desktop application for buying and selling second-hand goods, built with Python, Tkinter, and MySQL.
 
-> **Project Note:** This repository is shared for portfolio purposes. It was originally developed as a local course project and is not intended for direct deployment.
+
 
 ## Features
 
@@ -51,8 +53,4 @@ second_hand_marketplace/
 └── .env                  # DB credentials (not committed)
 ```
 
-## Architecture
 
-All SQL is in `db/queries.py`. UI modules in `ui_views/` call query functions and handle display — they contain no SQL. Each query function opens and closes its own connection.
-
-Passwords are hashed with `bcrypt` before storage. Database credentials are loaded from `.env` via `config.py` and never hardcoded.

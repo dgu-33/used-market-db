@@ -1,5 +1,7 @@
 # 동국 중고 마켓 (Donguk Second-Hand Marketplace)
 
+![mascot](ui_views/other%20images/%EB%8D%B0%EB%B2%A0%EC%84%A4%20%EC%95%84%EC%BD%94.jpg)
+
 A desktop application for buying and selling second-hand goods, built with Python, Tkinter, and MySQL.
 
 > **Project Note:** This repository is shared for portfolio purposes. It was originally developed as a local course project and is not intended for direct deployment.

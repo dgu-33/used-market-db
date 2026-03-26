@@ -2,6 +2,8 @@
 
 A desktop application for buying and selling second-hand goods, built with Python, Tkinter, and MySQL.
 
+> **Project Note:** This repository is shared for portfolio purposes. It was originally developed as a local course project and is not intended for direct deployment.
+
 ## Features
 
 - User registration and login
@@ -13,54 +15,20 @@ A desktop application for buying and selling second-hand goods, built with Pytho
 - Post-transaction reviews and satisfaction ratings
 - User profile with transaction history, received reviews, and chat rooms
 
-## Requirements
+## Environment
 
 - Python 3.12+
-- MySQL server running on the configured host/port
-- The following Python packages:
+- MySQL server
+- Local `.env` file for database credentials (see `.env.example`)
+- Dependencies: `mysql-connector-python`, `Pillow`, `python-dotenv`, `bcrypt`
 
-```
-mysql-connector-python
-Pillow
-python-dotenv
-bcrypt
-```
-
-Install them with:
-
-```bash
-pip install mysql-connector-python Pillow python-dotenv bcrypt
-```
-
-## Setup
-
-1. **Configure the database connection**
-
-   Copy `.env.example` to `.env` and fill in your values:
-
-   ```
-   DB_HOST=localhost
-   DB_PORT=3306
-   DB_USER=root
-   DB_PASSWORD=yourpassword
-   DB_NAME=secondhand_marketplace
-   ```
-
-2. **Create the database schema**
-
-   Create the `secondhand_marketplace` database in MySQL and run your schema SQL to create the required tables (`users`, `Post`, `UserLikes`, `Chats`, `Transactions`, `Review`).
-
-3. **Add image assets** *(optional)*
-
-   Product photos are loaded from `assets/images/` relative to the project root. Place any product images there. The homepage banner image is loaded from `ui_views/other images/`.
-
-## Running the app
+## Entry Point
 
 ```bash
 python main.py
 ```
 
-## Project structure
+## Project Structure
 
 ```
 second_hand_marketplace/

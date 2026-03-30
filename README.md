@@ -50,7 +50,7 @@ second_hand_marketplace/
 ├── config.py             # .env에서 DB 설정 로드
 ├── database.py           # get_connection() 팩토리
 ├── main.py               # 진입점
-└── .env                  # DB 접속 정보 (커밋 제외)
+└── .env                  # DB 접속 정보
 ```
 
 
